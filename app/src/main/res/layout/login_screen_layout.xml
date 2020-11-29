@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorBackgroundSecondary"
+        android:id="@+id/llAccountLogin"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/login_screen_main"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_max"
+            android:layout_height="match_parent">
+
+            <com.mkg.orderfood.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="@string/account"
+                android:textColor="@color/colorTextPrimary"/>
+
+            <com.mkg.orderfood.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/colorTextSecondary"
+                android:text="Login/Create Account quickly to manage orders"/>
+
+            <com.mkg.orderfood.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_bg"
+                android:layout_marginBottom="@dimen/margin_xmax"
+                android:layout_marginStart="32dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/margin_xmax"
+                android:padding="@dimen/padding_max"
+                android:textStyle="bold"
+                android:id="@+id/utvLogin"
+                android:textColor="@color/colorTextPrimary"
+                android:text="@string/login_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/margin_xmax"
+                android:background="@color/colorAccent"/>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/row_offers"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_half"
+                android:layout_marginBottom="@dimen/margin_half"
+                android:background="@color/colorTextTertiary"
+                android:paddingStart="@dimen/padding_max"
+                android:paddingEnd="@dimen/padding_max" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/row_feedback"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/cvBottomLogin"
+        app:cardElevation="8dp"
+        android:layout_marginTop="@dimen/margin_xmax"
+        app:cardCornerRadius="8dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

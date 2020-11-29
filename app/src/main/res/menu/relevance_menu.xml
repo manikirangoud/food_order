@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+
+        <item android:title="@string/relevance"
+            android:id="@+id/relevance"/>
+
+        <item android:title="@string/cost_for_person"
+            android:id="@+id/cost_for_person"/>
+
+        <item android:title="@string/timings"
+            android:id="@+id/timings"/>
+
+        <item android:title="@string/rating"
+            android:id="@+id/rating"/>
+    </group>
+
+</menu>

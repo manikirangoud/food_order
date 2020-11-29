@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/toolbar_main"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/colorPrimary"
+    android:foreground="?android:attr/selectableItemBackground"
+    style="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/margin_max"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/fab_min_width"
+            app:cardCornerRadius="@dimen/fab_min_radius"
+            app:cardElevation="@dimen/fab_min_elevation"
+            android:clickable="true"
+            android:id="@+id/cvLocation"
+            android:focusable="true"
+            android:tooltipText="@string/select_location"
+            android:transitionName="@string/back_button"
+            android:foreground="?attr/actionBarItemBackground"
+            android:layout_margin="4dp"
+            android:layout_marginEnd="@dimen/margin_max"
+            android:layout_height="@dimen/fab_min_height">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:background="@drawable/gradient_bg"
+                android:src="@drawable/location_fill"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/fab_padding"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/select_location"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginStart="8dp"
+            android:id="@+id/utv_toolbar_title"
+            android:textColor="@color/colorAccent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/fab_min_width"
+            app:cardCornerRadius="@dimen/fab_min_radius"
+            app:cardElevation="@dimen/fab_min_elevation"
+            android:clickable="true"
+            android:id="@+id/cvLogout"
+            android:visibility="gone"
+            android:focusable="true"
+            android:tooltipText="@string/logout"
+            android:foreground="?attr/actionBarItemBackground"
+            android:layout_margin="4dp"
+            android:layout_height="@dimen/fab_min_height">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:background="@drawable/gradient_bg"
+                android:src="@drawable/logout_outline"
+                android:contentDescription="@string/back"
+                android:padding="@dimen/fab_padding"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+

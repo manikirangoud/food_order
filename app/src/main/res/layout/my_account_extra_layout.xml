@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/llMyAccountExtra"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/rounded_bg_primary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/table_row_1"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/address"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_height="25dp"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/manage_address"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/menu_action_right"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/table_row_2"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/payments"
+            android:layout_gravity="center"
+            android:layout_height="25dp"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/payments"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/menu_action_right"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:id="@+id/table_row_3"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/favorites"
+            android:layout_height="25dp"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/favorites"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/menu_action_right"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:id="@+id/table_row_4"
+        android:paddingEnd="20dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:focusable="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/referrals"
+            android:layout_height="25dp"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/referrals"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/menu_action_right"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:clickable="true"
+        android:id="@+id/table_row_5"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/offers"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_height="25dp"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/offers"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/menu_action_right"/>
+    </TableRow>
+
+</LinearLayout>

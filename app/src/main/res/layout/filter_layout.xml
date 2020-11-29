@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/filter_header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:layout_height="wrap_content">
+
+            <com.mkg.orderfood.customviews.UbuntuTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_max"
+                android:textColor="@color/colorTextSecondary"
+                android:background="@color/colorBackgroundSecondary"
+                android:text="@string/show_restaurants_with"
+                android:textStyle="bold" />
+
+            <include
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                layout="@layout/filter_restaurants_layout"/>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@color/colorBackgroundSecondary"
+                android:layout_width="match_parent">
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:background="@color/colorBackgroundSecondary"
+                    android:text="@string/cuisines"
+                    android:textStyle="bold" />
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextSecondary"
+                    android:background="@color/colorBackgroundSecondary"
+                    android:id="@+id/utv_selected_cuisines"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_cuisines"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/pbCuisines"/>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@drawable/round_bg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginBottom="@dimen/margin_max"
+        android:layout_marginStart="@dimen/margin_xmax"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/margin_xmax"
+        android:padding="@dimen/padding_max"
+        android:textStyle="bold"
+        android:id="@+id/utvApplyFilters"
+        android:textColor="@color/colorTextPrimary"
+        android:text="@string/apply_filters" />
+
+</LinearLayout>
+

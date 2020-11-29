@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/colorBackgroundSecondary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_max"
+        android:paddingBottom="@dimen/layout_padding_end"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/user_details_layout"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            layout="@layout/my_account_layout" />
+
+
+        <include
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            layout="@layout/help_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <include
+            layout="@layout/row_feedback"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:id="@+id/utvPastOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgroundPrimary"
+            android:padding="16dp"
+            android:text="@string/past_orders"
+            android:textColor="@color/colorTextSecondary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_common"
+        android:minHeight="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:layout_width="wrap_content"
+        android:text="Some Stuff here!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

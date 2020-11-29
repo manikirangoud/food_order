@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context="com.mkg.orderfood.activities.LocationActivity" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/colorBackgroundPrimary"
+        android:orientation="vertical"
+        app:cardCornerRadius="8dp"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/margin_max"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/round_bg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginStart="32dp"
+            android:gravity="center"
+            android:layout_marginEnd="32dp"
+            android:padding="@dimen/padding_max"
+            android:textStyle="bold"
+            android:id="@+id/utvSelectLocation"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/select_location" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    android:id="@+id/linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundSecondary"
+    android:layout_marginTop="@dimen/margin_max"
+    app:layoutDescription="@xml/near_me_fragment_layout_scene">
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:id="@+id/utv_user_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_max"
+        android:paddingStart="@dimen/padding_max"
+        android:paddingEnd="@dimen/padding_max"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/carouselView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.jama.carouselview.CarouselView
+        android:layout_width="match_parent"
+        android:id="@+id/carouselView"
+        android:paddingTop="@dimen/padding_max"
+        android:paddingBottom="@dimen/padding_max"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/utv_user_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:enableSnapping="true"
+        app:scaleOnScroll="false"
+        app:setAutoPlay="true"
+        app:setAutoPlayDelay="7000"
+        app:carouselOffset="center"
+        app:indicatorAnimationType="thinWorm"
+        app:indicatorRadius="3"
+        app:indicatorPadding="5"
+        app:indicatorSelectedColor="@color/colorAccent"
+        app:indicatorUnselectedColor="@color/colorTextTertiary"
+        app:spacing="15" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="3dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_bg"
+            android:gravity="center">
+
+            <com.mkg.orderfood.customviews.UbuntuTextView
+                android:id="@+id/utv_no_of_restaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="@dimen/padding_max"
+                android:paddingBottom="@dimen/padding_max"
+                android:paddingStart="@dimen/padding_half"
+                android:paddingEnd="@dimen/padding_half"
+                android:text="@string/zero_restaurants_found"
+                android:textColor="@color/colorTextPrimary"
+                android:textStyle="bold" />
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/clFilter"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="@string/filters"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin_half"
+                    android:layout_marginEnd="@dimen/margin_half"
+                    android:padding="4dp"
+                    android:src="@drawable/filter" />
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:id="@+id/utvFilterCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/margin_min"
+                    android:paddingStart="@dimen/padding_min"
+                    android:paddingEnd="@dimen/padding_min"
+                    android:background="@drawable/text_selected_accent"
+                    android:layout_gravity="end"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <TableRow
+                android:id="@+id/tr_relevance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_transparent_bg"
+                android:clickable="true"
+                android:layout_marginEnd="@dimen/margin_half"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:id="@+id/utv_relevance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="8dp"
+                    android:text="@string/relevance"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/menu_action_down_circle" />
+
+            </TableRow>
+
+        </TableRow>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_restaurants"
+        app:layout_constraintEnd_toEndOf="@+id/rv_restaurants"
+        app:layout_constraintStart_toStartOf="@+id/rv_restaurants"
+        app:layout_constraintTop_toTopOf="@+id/rv_restaurants" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+

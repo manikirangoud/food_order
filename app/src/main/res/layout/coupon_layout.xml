@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_half"
+    android:gravity="center"
+    android:background="@drawable/rounded_bg_primary"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:padding="@dimen/padding_half"
+        android:src="@drawable/ic_sale" />
+
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="@string/apply_coupon"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_action_right"/>
+
+</LinearLayout>

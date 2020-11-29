@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActivityTransitions">true</item>
+    </style>
+
+
+    <style name="UbuntuBold" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+    </style>
+
+
+    <style name="PopupMenuStyle" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:colorBackground">@color/colorBackgroundSecondary</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+
+    <style name="MyToolbarTextView" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:fontFamily">@font/ubuntu_bold</item>
+        <item name="android:textSize">24sp</item>
+        <!--
+                <item name="android:searchViewStyle">@style/MySearchStyle</item>
+        -->
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+
+
+    <dimen name="text_size_medium">16sp</dimen>
+</resources>

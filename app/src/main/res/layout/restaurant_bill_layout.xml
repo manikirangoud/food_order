@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_bg_primary"
+    android:padding="@dimen/padding_max"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_bill"
+        android:textColor="@color/colorAccent"
+        android:paddingBottom="@dimen/padding_half"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/padding_half"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero_cost" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/padding_half"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gst"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gst_rate" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorTextTertiary"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/padding_half"
+        android:paddingBottom="@dimen/padding_half"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delivery_charges"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/free"
+            android:textColor="@color/colorAccent" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/margin_half"
+        android:background="@color/colorTextTertiary"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/padding_half"
+        android:paddingTop="@dimen/padding_half"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_pay"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero_cost"
+            android:textColor="@color/colorAccent" />
+    </TableRow>
+
+</LinearLayout>

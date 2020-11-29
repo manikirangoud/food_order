@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Food Order</string>
+
+
+    <string-array name="cuisines">
+
+        <item>American</item>
+        <item>Andhra</item>
+        <item>Arabian</item>
+        <item>Bakery</item>
+        <item>Beverages</item>
+        <item>Cafe</item>
+        <item>Chaat</item>
+        <item>Chinese</item>
+        <item>Continental</item>
+        <item>Desserts</item>
+        <item>Fast Food</item>
+        <item>Hyderabadi</item>
+        <item>Ice Cream</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Lebanese</item>
+        <item>Malaysian</item>
+        <item>Mexican</item>
+        <item>North Indian</item>
+        <item>Pizzas</item>
+        <item>Raayalaseema</item>
+        <item>Salads</item>
+        <item>South Indian</item>
+        <item>Street Food</item>
+        <item>Sweets</item>
+        <item>Tandoori</item>
+        <item>Thai</item>
+
+    </string-array>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="time">Time</string>
+    <string name="cost_per_person">Cost per person</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="restaurant_type">Restaurant Type</string>
+    <string name="rating">Rating</string>
+    <string name="splash_screen_message">Hungry Now ? Order Now !</string>
+    <string name="restaurants_found">Restaurants Found</string>
+    <string name="relevance">Relevance</string>
+    <string name="show_restaurants_with">Show Restaurants With</string>
+    <string name="cuisines">Cuisines</string>
+    <string name="name">Name</string>
+    <string name="reset">Reset</string>
+    <string name="filters">Filters</string>
+    <string name="offers">Offers</string>
+    <string name="pure_veg">Pure Veg</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="plate">Plate</string>
+    <string name="account">Account</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="breakfast_mood">In the mode for a breakfast ?</string>
+    <string name="lunch_mood">In the mode for a Lunch ?</string>
+    <string name="snack_mood">In the mode for a Snacks ?</string>
+    <string name="dinner_mood">In the mode for a Dinner ?</string>
+    <string name="midnight_mood">In the mode for a midnight dinner ?</string>
+    <string name="cart">Cart</string>
+    <string name="search">Search</string>
+    <string name="near_me">Near Me</string>
+    <string name="cost_for_person">Cost for Person</string>
+    <string name="timings">Timings</string>
+    <string name="address">Address</string>
+    <string name="restaurant_image">Restaurant Image</string>
+    <string name="back_button">Back Button</string>
+    <string name="back">Back</string>
+    <string name="toolbar_title">Toolbar Title</string>
+    <string name="location">Location</string>
+    <string name="past_orders">Past Orders</string>
+    <string name="help">Help</string>
+    <string name="explore">Explore</string>
+    <string name="explore_hint">Search for restaurants, dishes...</string>
+    <string name="account_caps">ACCOUNT</string>
+    <string name="login_caps">LOGIN</string>
+    <string name="feedback">Feedback</string>
+    <string name="arrow">Arrow</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="app_version">App Version 1.0(1)</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="add_address">Add Address</string>
+    <string name="select_address">Select Address</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="referral_hint">I have a referral code</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_location">Map</string>
+    <string name="select_location">Select Location</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="dishes">Dishes</string>
+    <string name="zero_restaurants_found">0 Restaurants Found</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="otp">OTP</string>
+    <string name="sign_up_sub_text">Create an account with the new phone number</string>
+    <string name="username">User name</string>
+    <string name="edit">Edit</string>
+    <string name="my_account">My Account</string>
+    <string name="referrals">Referrals</string>
+    <string name="favorites">Favorites</string>
+    <string name="payments">Payments</string>
+    <string name="manage_address">Manage Address</string>
+    <string name="logout">Logout</string>
+    <string name="zero">0</string>
+    <string name="restaurant_bill">Restaurant Bill</string>
+    <string name="total">Total</string>
+    <string name="zero_cost">0.00</string>
+    <string name="gst">GST</string>
+    <string name="gst_rate">0.00</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="free">FREE</string>
+    <string name="to_pay">To Pay</string>
+    <string name="restaurant_location">Restaurant Location</string>
+    <string name="item_name">Item Name</string>
+    <string name="instructions_hint">Any instructions? We promise to pass them on</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="login">Login</string>
+    <string name="login_sub_text">You can login through mobile number or gmail account</string>
+
+</resources>

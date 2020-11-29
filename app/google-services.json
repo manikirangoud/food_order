@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "117195615645",
+    "firebase_url": "https://food-order-app-fa0a2.firebaseio.com",
+    "project_id": "food-order-app-fa0a2",
+    "storage_bucket": "food-order-app-fa0a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117195615645:android:fa19b0cdbafb2083b29374",
+        "android_client_info": {
+          "package_name": "food.order.intern.mkg.com.foodorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117195615645-bspqj46hmmmsqthavi15p7g4bv51lk9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB97Q1H9LMrCgWLQTAFq8h0ggcGuKr2384"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117195615645-bspqj46hmmmsqthavi15p7g4bv51lk9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

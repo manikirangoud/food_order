@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Fab Dimens -->
+    <dimen name="fab_smin_width">30dp</dimen>
+    <dimen name="fab_smin_height">30dp</dimen>
+    <dimen name="fab_min_width">40dp</dimen>
+    <dimen name="fab_min_height">40dp</dimen>
+    <dimen name="fab_max_width">50dp</dimen>
+    <dimen name="fab_max_height">50dp</dimen>
+    <dimen name="fab_padding">12dp</dimen>
+    <dimen name="fab_half_padding">6dp</dimen>
+    <dimen name="fab_max_radius">25dp</dimen>
+    <dimen name="fab_min_radius">20dp</dimen>
+    <dimen name="fab_max_elevation">7dp</dimen>
+    <dimen name="fab_min_elevation">3dp</dimen>
+    <dimen name="fab_1dp_elevation">1dp</dimen>
+    <!-- Common Card Dimens -->
+    <dimen name="common_card_radius">8dp</dimen>
+    <dimen name="iv_empty_layout">300dp</dimen>
+    <dimen name="margin_max">16dp</dimen>
+    <dimen name="padding_max">16dp</dimen>
+    <dimen name="padding_half">8dp</dimen>
+    <dimen name="margin_xmax">32dp</dimen>
+    <dimen name="padding_min">4dp</dimen>
+    <dimen name="margin_half">8dp</dimen>
+    <dimen name="margin_min">4dp</dimen>
+    <dimen name="carousel_image_width">150dp</dimen>
+    <dimen name="carousel_image_height">150dp</dimen>
+    <dimen name="layout_margin_end">100dp</dimen>
+    <dimen name="layout_padding_end">100dp</dimen>
+
+
+</resources>

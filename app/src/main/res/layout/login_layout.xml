@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            layout="@layout/toolbar_signup_login"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:id="@+id/llDetails"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/trMobileNumber"
+                    android:layout_height="wrap_content">
+
+                    <com.hbb20.CountryCodePicker
+                        android:layout_width="wrap_content"
+                        android:id="@+id/ccp_country_code"
+                        android:paddingTop="@dimen/padding_max"
+                        android:paddingBottom="@dimen/padding_max"
+                        style="@style/UbuntuBold"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/mobile_number"
+                            android:maxLength="15"
+                            android:id="@+id/et_mobile_number"
+                            android:inputType="phone|number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/trOtpVerification"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/otp"
+                            android:maxLength="6"
+                            android:id="@+id/etOtp"
+                            android:inputType="number"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.mkg.orderfood.customviews.UbuntuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:layout_marginStart="@dimen/margin_xmax"
+                        android:layout_weight="1"
+                        android:id="@+id/utvVerifyOtp"
+                        android:gravity="center"
+                        android:paddingBottom="8dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:background="@drawable/round_bg"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/verify_otp"/>
+
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/llSignUp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_address"
+                            android:id="@+id/et_email_sign_up"
+                            android:inputType="textEmailAddress"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/name"
+                            android:id="@+id/et_name"
+                            android:inputType="textPersonName"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/check_box_referral"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/referral_hint"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/til_referral_code"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/margin_max"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:id="@+id/et_referral_code"
+                            android:hint="@string/referral_code" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginTop="@dimen/margin_xmax"
+                    android:layout_marginBottom="@dimen/margin_xmax"
+                    android:background="@color/colorTextTertiary"/>
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/round_bg"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginBottom="@dimen/margin_max"
+                    android:layout_marginStart="32dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="32dp"
+                    android:padding="@dimen/padding_max"
+                    android:textStyle="bold"
+                    android:id="@+id/utvSendOtp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:text="@string/send_otp" />
+
+
+                <com.mkg.orderfood.customviews.UbuntuTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/round_bg"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_marginBottom="@dimen/margin_max"
+                    android:layout_marginStart="32dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="32dp"
+                    android:padding="@dimen/padding_max"
+                    android:textStyle="bold"
+                    android:id="@+id/utvSignUp"
+                    android:textColor="@color/colorTextPrimary"
+                    android:text="@string/sign_up" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/margin_xmax"
+        android:id="@+id/pbLogin"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

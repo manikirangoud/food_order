@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/offers"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBackgroundSecondary"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:paddingStart="24dp"
+            android:paddingLeft="24dp"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/pure_veg"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+</LinearLayout>

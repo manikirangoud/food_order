@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/rounded_bg_primary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/padding_half"
+        android:paddingEnd="@dimen/padding_half"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/address"
+            android:scaleType="centerCrop"
+            android:padding="8dp"
+            android:src="@drawable/ic_home"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:text="Multiple addresses in this location!"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="7dp"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/round_bg"
+            android:textColor="@color/colorAccent"
+            android:text="@string/add_address"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_bg"
+            android:textColor="@color/colorAccent"
+            android:text="@string/select_address"/>
+    </TableRow>
+
+</LinearLayout>

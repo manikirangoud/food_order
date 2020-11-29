@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#D3D3D3"
+    android:gravity="bottom"
+    android:layout_height="150dp">
+
+    <com.mkg.orderfood.customviews.UbuntuTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome User!"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>

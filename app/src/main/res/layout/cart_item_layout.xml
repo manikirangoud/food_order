@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:background="@color/colorBackgroundSecondary"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/layout_padding_end"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/restaurant_with_item_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_max"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:layout_height="wrap_content"/>
+
+        <include
+            layout="@layout/coupon_layout"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_marginBottom="@dimen/margin_max"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_max"
+            layout="@layout/restaurant_bill_layout"/>
+
+
+        <include
+            layout="@layout/select_address_layout"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="@dimen/padding_max"
+    android:id="@+id/toolbar_filter_layout"
+    android:background="@color/colorPrimary"
+    android:minHeight="?android:attr/actionBarSize"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/filters"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/reset_filter_layout"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_bg"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/reset"/>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

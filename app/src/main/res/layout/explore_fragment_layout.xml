@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackgroundSecondary"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margin_max"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_marginEnd="@dimen/margin_half"
+        android:paddingStart="@dimen/padding_half"
+        android:paddingEnd="@dimen/padding_half"
+        android:background="@drawable/rounded_bg_primary"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:paddingStart="4dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:inputType="text"
+            android:focusable="true"
+            android:paddingEnd="40dp"
+            android:id="@+id/edit_text_explore"
+            android:hint="@string/explore_hint"
+            android:textColorHint="@color/colorTextTertiary"
+            android:textColor="@color/colorTextPrimary"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_gravity="end|center"
+            android:id="@+id/image_view_clear"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/close"
+            android:layout_height="15dp" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_half"
+        android:paddingBottom="@dimen/padding_half"
+        android:layout_height="wrap_content">
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_half"
+            android:paddingBottom="@dimen/padding_half"
+            android:paddingStart="@dimen/padding_max"
+            android:paddingEnd="@dimen/padding_max"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/utvRestaurantsToggle"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@drawable/text_selected_bg"
+            android:textColor="@color/colorTextPrimary"
+            android:text="@string/restaurants"/>
+
+        <com.mkg.orderfood.customviews.UbuntuTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_half"
+            android:paddingBottom="@dimen/padding_half"
+            android:paddingStart="@dimen/padding_max"
+            android:paddingEnd="@dimen/padding_max"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/utvDishesToggle"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/margin_max"
+            android:background="@drawable/rounded_bg"
+            android:textColor="@color/colorAccent"
+            android:text="@string/dishes"/>
+    </TableRow>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_marginEnd="@dimen/margin_half"
+        android:background="@drawable/rounded_bg_primary"
+        android:id="@+id/ll_fragments_explore"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextAppearance="@style/UbuntuBold"
+            app:tabTextColor="@color/colorTextTertiary"
+            app:tabIndicatorHeight="1dp"
+            app:tabMode="fixed"
+            android:background="@drawable/rounded_bg_primary"
+            android:id="@+id/tlExplore"
+            app:tabSelectedTextColor="@color/colorAccent"
+            android:minHeight="?attr/actionBarSize" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/vpExplore"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
